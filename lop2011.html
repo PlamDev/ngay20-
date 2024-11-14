@@ -311,7 +311,7 @@
     </div>
 
     <!-- Thêm phần hiển thị dòng chữ khi nhấp chuột -->
-    <div id="toggle-text" style="display: none; position: absolute; top: 10%; left: 50%; transform: translate(calc(-50% - 8cm), 0); font-size: 30px; color: #d1cace;">
+    <div id="toggle-text" style="display: none; position: absolute; top: 20%; left: 35%; font-size: 25px; color: #d1cace;">
         Chúc mừng nhà giáo!
     </div>
 
@@ -342,12 +342,12 @@
       document.addEventListener("click", () => {
         toggleTextElement.style.display = toggleTextElement.style.display === 'none' ? 'block' : 'none';
       // Hàm thêm ký tự xuống dòng sau mỗi 25 ký tự
-function addLineBreaks(text, length = 23) {
+function addLineBreaks(text, length = 60) {
     const regex = new RegExp(`(.{1,${length}})(\\s|$)`, 'g');
     return text.match(regex).join('\n');
 }
 
-toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 25);
+toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 60);
 
         clickCount++;
       });
