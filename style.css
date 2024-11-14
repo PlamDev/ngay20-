@@ -13,7 +13,7 @@
 body {
     .happy-woman-day,
 .flowers {
-    margin-left: -3cm;
+    margin-left: -2cm;
 }
   display: flex;
   align-items: flex-end;
@@ -37,7 +37,7 @@ body {
 
 .happy-woman-day {
   color: white;
-  font-size: 17px;
+  font-size: 22px;
   position: fixed;
   top: 100px;
 }
