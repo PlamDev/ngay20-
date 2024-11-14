@@ -340,12 +340,12 @@
       document.addEventListener("click", () => {
         toggleTextElement.style.display = toggleTextElement.style.display === 'none' ? 'block' : 'none';
       // Hàm thêm ký tự xuống dòng sau mỗi 25 ký tự
-function addLineBreaks(text, length = 50) {
+function addLineBreaks(text, length = 40) {
     const regex = new RegExp(`(.{1,${length}})(\\s|$)`, 'g');
     return text.match(regex).join('\n');
 }
 
-toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 50);
+toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 40);
 
         clickCount++;
       });
