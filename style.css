@@ -14,7 +14,7 @@ body {
   font-family: "Times New Roman", Times, serif;
     .happy-woman-day,
 .flowers {
-    margin-left: 0cm;
+    margin-left: -2cm;
 }
   display: flex;
   align-items: flex-end;
@@ -38,7 +38,7 @@ body {
 
 .happy-woman-day {
   color: rgb(228, 245, 0);
-  font-size: 3px;
+  font-size: 5px;
   position: fixed;
   top: 65px;
 }
