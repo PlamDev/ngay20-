@@ -11,7 +11,7 @@
     
 <body class="not-loaded">
     <div class="night"></div>
-    <div class="happy-woman-day">✨Chúc Mừng Ngày Nhà Giáo Việt Nam 20/11✨</div>
+    <div class="happy-woman-day">✨𝐂𝐡𝐚̀𝐨 𝐌𝐮̛̀𝐧𝐠 𝐍𝐠𝐚̀𝐲 𝐍𝐡𝐚̀ 𝐆𝐢𝐚́𝐨 𝐕𝐢𝐞̣̂𝐭 𝐍𝐚𝐦 𝟐𝟎/𝟏𝟏✨</div>
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
@@ -260,7 +260,7 @@
         </div>
       </div>
     </div>
-        <div id="toggle-text" style="display: none; position: absolute; top: 20%; left: 50=%; font-size: 5px; color: #d1cace;">
+        <div id="toggle-text" style="display: none; position: absolute; top: 20%; left: 20%; font-size: 10px; color: #d1cace;">
         Chúc mừng nhà giáo!
     </div>
 
@@ -290,12 +290,12 @@
       document.addEventListener("click", () => {
         toggleTextElement.style.display = toggleTextElement.style.display === 'none' ? 'block' : 'none';
       // Hàm thêm ký tự xuống dòng sau mỗi 25 ký tự
-function addLineBreaks(text, length = 58) {
+function addLineBreaks(text, length = 50) {
     const regex = new RegExp(`(.{1,${length}})(\\s|$)`, 'g');
     return text.match(regex).join('\n');
 }
 
-toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 58);
+toggleTextElement.innerText = addLineBreaks(messages[clickCount % messages.length], 50);
 
         clickCount++;
       });
